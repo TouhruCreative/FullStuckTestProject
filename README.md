@@ -10,7 +10,7 @@ ___________              __ ___________    .__  .__    _________ __             
 
 ## :window: Windows
 ```
-git clone https://github.com/TouhruCreative/DjangoProjectDeliveryShop.git
+git clone https://github.com/TouhruCreative/FullStuckTestProject.git
 cd FullStuckTestProject
 python -m venv venv
 venv\Scripts\activate
@@ -19,7 +19,7 @@ pip install -r requirements.txt
 
 ## :apple: MacOS / :penguin: Linux
 ```
-git clone https://github.com/TouhruCreative/DjangoProjectDeliveryShop.git
+git clone https://github.com/TouhruCreative/FullStuckTestProject.git
 cd FullStuckTestProject
 python -m venv venv
 source venv/bin/activate
