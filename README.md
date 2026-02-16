@@ -8,6 +8,9 @@ ___________              __ ___________    .__  .__    _________ __             
 ```
 # Guide - fast start
 
+## Node for React
+https://nodejs.org/en/download/current
+
 ## :window: Windows
 ```
 git clone https://github.com/TouhruCreative/FullStuckTestProject.git
