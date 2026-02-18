@@ -17,7 +17,7 @@ function Videos() {
     }, []);
 
     async function loadVideos() {
-        const data = await getVideos();
+        const data = await getVideo();
         setVideos(data);
     }
 
@@ -25,7 +25,7 @@ function Videos() {
         e.preventDefault();
 
         if (editingId) {
-            const updated = await updateVideos(editingId, {
+            const updated = await updateVideo(editingId, {
                 title,
                 channel,
             });
@@ -38,7 +38,7 @@ function Videos() {
 
             setEditingId(null);
         } else {
-            const newVideo = await createVideos({
+            const newVideo = await createVideo({
                 title,
                 channel,
             });
@@ -51,7 +51,7 @@ function Videos() {
     }
 
     async function handleDelete(id) {
-        await deleteVideos(id);
+        await deleteVideo(id);
         setVideos(videos.filter(v => v.id !== id));
     }
 

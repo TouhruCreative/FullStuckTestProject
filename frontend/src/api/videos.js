@@ -6,7 +6,7 @@ export async function getVideos() {
     return res.json();
 }
 
-export async function createVideos(data) {
+export async function createVideo(data) {
     const res = await fetch(API_URL,
         {
             method: "POST",
@@ -18,7 +18,7 @@ export async function createVideos(data) {
     return res.json();
 }
 
-export async function updateVideos() {
+export async function updateVideo() {
     const res = await fetch(`${API_URL}${id}/`,
         {
             method: "PATCH",
@@ -30,7 +30,7 @@ export async function updateVideos() {
     return res.json();
 }
 
-export async function deleteVideos() {
+export async function deleteVideo() {
     const res = await fetch(`${API_URL}${id}/`,
         {method: "DELETE"}
     );
